@@ -4,7 +4,8 @@ on: [push, pull_request]
 jobs:
   code-check:
     runs-on: ubuntu-latest
-
+    env:
+      PROJECT_PATH: flutter_background_color_randomizer
     steps:
       - uses: actions/checkout@v1
           
