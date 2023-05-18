@@ -41,10 +41,10 @@ class _BackgroundColorRandomizerState extends State<BackgroundColorRandomizer> {
         /// Checks if the random color is bellow the limit (sum < darkTheme)
         /// Change the color of the text to White in order to keep visibility
         textColor =
-        backgroundColor.red + backgroundColor.blue + backgroundColor.green <
-            darkThemeLimit
-            ? Colors.white
-            : Colors.black;
+            backgroundColor.red + backgroundColor.blue + backgroundColor.green <
+                    darkThemeLimit
+                ? Colors.white
+                : Colors.black;
       } else {
         /// Change the background for a Random color
         backgroundColor = Color.fromRGBO(
@@ -57,10 +57,10 @@ class _BackgroundColorRandomizerState extends State<BackgroundColorRandomizer> {
         /// Checks if the random color is bellow the limit (sum < LightTheme)
         /// Change the color of the text to White in order to keep visibility
         textColor =
-        backgroundColor.red + backgroundColor.blue + backgroundColor.green <
-            lightThemeLimit
-            ? Colors.white
-            : Colors.black;
+            backgroundColor.red + backgroundColor.blue + backgroundColor.green <
+                    lightThemeLimit
+                ? Colors.white
+                : Colors.black;
       }
     });
   }
